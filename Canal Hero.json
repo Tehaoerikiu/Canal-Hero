@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 243,
+    "build": 224,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -777,6 +777,62 @@
         "name": "B3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "3Stars__1_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "3Stars__1_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "2Stars-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2Stars-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1Star-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1Star-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NoStar-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NoStar-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite18",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1099,8 +1155,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.2386775827025784,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -2308,8 +2363,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.4481978045410356,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
@@ -2741,9 +2795,8 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.343752024161232,
-        "windowMask": false,
-        "selectedLayer": ""
+        "zoomFactor": 0.6897782140104511,
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
@@ -3120,15 +3173,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 109,
           "keepRatio": true,
           "layer": "Settings",
           "name": "Volume",
           "persistentUuid": "39980662-516f-40db-aef4-001b94ee14c1",
-          "width": 0,
-          "x": 512,
-          "y": 406,
+          "width": 368,
+          "x": 482,
+          "y": 231,
           "zOrder": 57,
           "numberProperties": [],
           "stringProperties": [],
@@ -3136,15 +3190,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 64,
+          "height": 109,
           "layer": "Settings",
           "name": "Music",
           "persistentUuid": "50d28934-550d-479f-a4de-77f687063631",
-          "width": 0,
-          "x": 512,
-          "y": 591,
+          "width": 368,
+          "x": 482,
+          "y": 391,
           "zOrder": 58,
           "numberProperties": [],
           "stringProperties": [],
@@ -4677,25 +4731,159 @@
           "assetStoreId": "",
           "name": "Volume",
           "type": "PanelSpriteSlider::PanelSpriteSlider",
-          "variant": "menkrep",
           "variables": [],
           "effects": [],
           "behaviors": [],
           "content": {
             "ShowLabelAtChanges": false,
             "InitialValue": 50
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "FillBar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 32
+            },
+            "FillBar": {
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "bar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 32
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "It displays the value when it changes.",
+              "font": "",
+              "textAlignment": "",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "It displays the value when it changes.",
+                "font": "",
+                "textAlignment": "",
+                "verticalTextAlignment": "top",
+                "characterSize": 20,
+                "color": "0;0;0"
+              }
+            },
+            "Thumb": {
+              "bottomMargin": 0,
+              "height": 80,
+              "leftMargin": 10,
+              "rightMargin": -50,
+              "texture": "Thumb.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 160
+            }
           }
         },
         {
           "assetStoreId": "",
           "name": "Music",
           "type": "PanelSpriteSlider::PanelSpriteSlider",
-          "variant": "menkrep",
           "variables": [],
           "effects": [],
           "behaviors": [],
           "content": {
             "ShowLabelAtChanges": false
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "FillBar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 32
+            },
+            "FillBar": {
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "bar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 32
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "It displays the value when it changes.",
+              "font": "",
+              "textAlignment": "",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "It displays the value when it changes.",
+                "font": "",
+                "textAlignment": "",
+                "verticalTextAlignment": "top",
+                "characterSize": 20,
+                "color": "0;0;0"
+              }
+            },
+            "Thumb": {
+              "bottomMargin": 0,
+              "height": 80,
+              "leftMargin": -10,
+              "rightMargin": -50,
+              "texture": "Thumb.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 160
+            }
           }
         },
         {
@@ -5908,44 +6096,17 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210183,
-        "windowMask": false,
-        "selectedLayer": ""
+        "zoomFactor": 0.4335774304702383,
+        "windowMask": false
       },
       "objectsGroups": [
         {
           "name": "Garbages",
-          "objects": [
-            {
-              "name": "Fish"
-            },
-            {
-              "name": "Battery"
-            },
-            {
-              "name": "Plastic"
-            },
-            {
-              "name": "Bottle"
-            },
-            {
-              "name": "Can"
-            }
-          ]
+          "objects": []
         },
         {
           "name": "Cans",
-          "objects": [
-            {
-              "name": "Organic"
-            },
-            {
-              "name": "Unorganic"
-            },
-            {
-              "name": "B3"
-            }
-          ]
+          "objects": []
         }
       ],
       "variables": [
@@ -6652,6 +6813,10 @@
                 {
                   "type": "string",
                   "value": "Plastic"
+                },
+                {
+                  "type": "string",
+                  "value": "Bottle"
                 }
               ]
             }
@@ -6679,10 +6844,194 @@
                 {
                   "type": "string",
                   "value": "Can"
+                },
+                {
+                  "type": "string",
+                  "value": "Battery"
                 }
               ]
             }
           ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "CleanCounter",
+          "persistentUuid": "2f08b946-9661-4dae-933d-412b563538b1",
+          "width": 0,
+          "x": 177,
+          "y": 75,
+          "zOrder": 159,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
+          "layer": "Win",
+          "name": "BlackScreen_Win",
+          "opacity": 128,
+          "persistentUuid": "829c0cc5-e082-441b-ad2d-665a8df4ab2e",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 160,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Win",
+          "name": "Win_text",
+          "persistentUuid": "7dfb70d6-2675-471f-bcf9-fd3f52cefcba",
+          "width": 0,
+          "x": 283,
+          "y": 78,
+          "zOrder": 161,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FinalCleanCounter",
+          "persistentUuid": "cbb07d54-c26a-4266-abcb-e69dcf5a0075",
+          "width": 0,
+          "x": 1280,
+          "y": 312.5,
+          "zOrder": 162,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 712,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Border",
+          "persistentUuid": "a97f35ba-f08d-4b2a-858c-dde3fc4610ff",
+          "width": 64,
+          "x": 1283,
+          "y": 4,
+          "zOrder": 163,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 101,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Stars",
+          "persistentUuid": "86097a3e-1241-433b-9442-70f5b62fad73",
+          "width": 304,
+          "x": 1280,
+          "y": 476,
+          "zOrder": 164,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Win",
+          "name": "Next_btn",
+          "persistentUuid": "9eb55e1a-1cfb-43aa-9199-b4d27092efdc",
+          "width": 0,
+          "x": 1077,
+          "y": 782,
+          "zOrder": 165,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Menu",
+          "persistentUuid": "48d9e9b5-d7d2-4e5c-987b-26a52affecf8",
+          "width": 0,
+          "x": 0,
+          "y": 782,
+          "zOrder": 166,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Restart",
+          "persistentUuid": "43c42a05-e25f-48c7-acd0-211a36c49ce1",
+          "width": 0,
+          "x": 462,
+          "y": 782,
+          "zOrder": 167,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
+          "layer": "Lose",
+          "name": "BlackScreen_Lose",
+          "opacity": 128,
+          "persistentUuid": "c4b25809-22f5-4f07-a812-0b4e280addf1",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 168,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Lose",
+          "name": "Lose_text",
+          "persistentUuid": "26e76aef-8cbc-402a-9fe9-1b356d7c146d",
+          "width": 0,
+          "x": 283,
+          "y": 78,
+          "zOrder": 169,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -7313,7 +7662,6 @@
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 80,
-            "lineHeight": 0,
             "color": "255;255;255"
           }
         },
@@ -7416,7 +7764,6 @@
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 15,
-            "lineHeight": 0,
             "color": "255;255;255"
           }
         },
@@ -7531,401 +7878,6 @@
                           },
                           {
                             "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Fish",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "CancellableDraggable",
-              "type": "CancellableDraggable::CancellableDraggable",
-              "DraggableBehavior": "Draggable",
-              "TweenBehavior": "Tween",
-              "OriginalX": 1.2731974746e-313,
-              "OriginalY": 1.27319767705e-313
-            },
-            {
-              "name": "Draggable",
-              "type": "DraggableBehavior::Draggable",
-              "checkCollisionMask": true
-            },
-            {
-              "name": "ObjectStack",
-              "type": "ObjectStack::ObjectStack"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "ikan busuk2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Battery",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "CancellableDraggable",
-              "type": "CancellableDraggable::CancellableDraggable",
-              "DraggableBehavior": "Draggable",
-              "TweenBehavior": "Tween",
-              "OriginalX": 1.2731974746e-313,
-              "OriginalY": 1.27319767705e-313
-            },
-            {
-              "name": "Draggable",
-              "type": "DraggableBehavior::Draggable",
-              "checkCollisionMask": true
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "baterai kecil.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 16,
-                            "y": 4
-                          },
-                          {
-                            "x": 48,
-                            "y": 4
-                          },
-                          {
-                            "x": 48,
-                            "y": 56
-                          },
-                          {
-                            "x": 16,
-                            "y": 56
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Plastic",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "CancellableDraggable",
-              "type": "CancellableDraggable::CancellableDraggable",
-              "DraggableBehavior": "Draggable",
-              "TweenBehavior": "Tween",
-              "OriginalX": 1.2731974746e-313,
-              "OriginalY": 1.27319767705e-313
-            },
-            {
-              "name": "Draggable",
-              "type": "DraggableBehavior::Draggable",
-              "checkCollisionMask": true
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "kantong plastik.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 0
-                          },
-                          {
-                            "x": 56,
-                            "y": 0
-                          },
-                          {
-                            "x": 56,
-                            "y": 64
-                          },
-                          {
-                            "x": 8,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Bottle",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "CancellableDraggable",
-              "type": "CancellableDraggable::CancellableDraggable",
-              "DraggableBehavior": "Draggable",
-              "TweenBehavior": "Tween",
-              "OriginalX": 1.2731974746e-313,
-              "OriginalY": 1.27319767705e-313
-            },
-            {
-              "checkCollisionMask": true,
-              "name": "Draggable",
-              "type": "DraggableBehavior::Draggable"
-            },
-            {
-              "isFolded": true,
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "botol.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 48,
-                            "y": 0
-                          },
-                          {
-                            "x": 48,
-                            "y": 64
-                          },
-                          {
-                            "x": 16,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Can",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "CancellableDraggable",
-              "type": "CancellableDraggable::CancellableDraggable",
-              "DraggableBehavior": "Draggable",
-              "TweenBehavior": "Tween",
-              "OriginalX": 1.2731974746e-313,
-              "OriginalY": 1.27319767705e-313
-            },
-            {
-              "name": "Draggable",
-              "type": "DraggableBehavior::Draggable",
-              "checkCollisionMask": true
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "kaleng cat.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 0
-                          },
-                          {
-                            "x": 56,
-                            "y": 0
-                          },
-                          {
-                            "x": 56,
-                            "y": 64
-                          },
-                          {
-                            "x": 8,
                             "y": 64
                           }
                         ]
@@ -8800,213 +8752,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "B3",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "isi",
-              "type": "array",
-              "children": []
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "B4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 44,
-                        "y": 44
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 27.5,
-                            "y": 28
-                          },
-                          {
-                            "x": 60,
-                            "y": 28
-                          },
-                          {
-                            "x": 60,
-                            "y": 47
-                          },
-                          {
-                            "x": 27,
-                            "y": 47
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Organic",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "isi",
-              "type": "array",
-              "children": []
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Organik2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 44,
-                        "y": 44
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 27.5,
-                            "y": 27.5
-                          },
-                          {
-                            "x": 60,
-                            "y": 27
-                          },
-                          {
-                            "x": 60,
-                            "y": 47
-                          },
-                          {
-                            "x": 27.5,
-                            "y": 47.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Unorganic",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "isi",
-              "type": "array",
-              "children": [
-                {
-                  "type": "string",
-                  "value": "Plastic"
-                },
-                {
-                  "type": "string",
-                  "value": "Bottle"
-                }
-              ]
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Anorganik2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 44,
-                        "y": 44
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 28.5,
-                            "y": 28.5
-                          },
-                          {
-                            "x": 59.5,
-                            "y": 28.5
-                          },
-                          {
-                            "x": 59.5,
-                            "y": 47.5
-                          },
-                          {
-                            "x": 28.5,
-                            "y": 47.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Inventory",
@@ -9581,26 +9326,817 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "CleanCounter",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "KEBERSIHAN : 0%",
+          "font": "Minecraft.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 5,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "KEBERSIHAN : 0%",
+            "font": "Minecraft.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BlackScreen_Win",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite16",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Win_text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "MISSION COMPLETE\nKEBERSIHAN AIR MENCAPAI",
+          "font": "Minecraft.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 10,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MISSION COMPLETE\nKEBERSIHAN AIR MENCAPAI",
+            "font": "Minecraft.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "FinalCleanCounter",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "100%",
+          "font": "Minecraft.ttf",
+          "textAlignment": "left",
+          "characterSize": 70,
+          "color": {
+            "b": 33,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 7,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "100%",
+            "font": "Minecraft.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 70,
+            "color": "0;255;33"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Border",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite17",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Stars",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "3Stars__1_-removebg-preview.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 236
+                          },
+                          {
+                            "x": 25,
+                            "y": 236
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2Stars-removebg-preview.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 236
+                          },
+                          {
+                            "x": 25,
+                            "y": 236
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "1Star-removebg-preview.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 236
+                          },
+                          {
+                            "x": 25,
+                            "y": 236
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NoStar-removebg-preview.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 20
+                          },
+                          {
+                            "x": 695,
+                            "y": 236
+                          },
+                          {
+                            "x": 25,
+                            "y": 236
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Next_btn",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.2,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuint",
+              "FadeOutEasing": "easeInOutQuint",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "NEXT",
+          "font": "Minecraft.ttf",
+          "textAlignment": "center",
+          "characterSize": 70,
+          "color": {
+            "b": 0,
+            "g": 255,
+            "r": 133
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 10,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "NEXT",
+            "font": "Minecraft.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 70,
+            "color": "133;255;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Restart",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.2,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuint",
+              "FadeOutEasing": "easeInOutQuint",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "RESTART",
+          "font": "Minecraft.ttf",
+          "textAlignment": "center",
+          "characterSize": 70,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 10,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "RESTART",
+            "font": "Minecraft.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 70,
+            "color": "255;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Menu",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.2,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuint",
+              "FadeOutEasing": "easeInOutQuint",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "MENU",
+          "font": "Minecraft.ttf",
+          "textAlignment": "center",
+          "characterSize": 70,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 10,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MENU",
+            "font": "Minecraft.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 70,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BlackScreen_Lose",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite18",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Lose_text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "MISSION FAILED\nKEBERSIHAN AIR MENCAPAI",
+          "font": "Minecraft.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 10,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MISSION FAILED\nKEBERSIHAN AIR MENCAPAI",
+            "font": "Minecraft.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "255;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
+            "folderName": "Winandlose_Parts",
+            "children": [
+              {
+                "objectName": "BlackScreen_Lose"
+              },
+              {
+                "objectName": "Menu"
+              },
+              {
+                "objectName": "Restart"
+              },
+              {
+                "objectName": "Next_btn"
+              },
+              {
+                "objectName": "FinalCleanCounter"
+              },
+              {
+                "objectName": "BlackScreen_Win"
+              },
+              {
+                "objectName": "Stars"
+              },
+              {
+                "objectName": "Win_text"
+              }
+            ]
+          },
+          {
             "folderName": "EcoDeck_Parts",
             "children": [
               {
                 "folderName": "Trash_can",
                 "children": [
-                  {
-                    "objectName": "Unorganic"
-                  },
-                  {
-                    "objectName": "Organic"
-                  },
-                  {
-                    "objectName": "B3"
-                  },
                   {
                     "objectName": "TrashCan"
                   }
@@ -9635,22 +10171,7 @@
             "folderName": "Garbage",
             "children": [
               {
-                "objectName": "Fish"
-              },
-              {
                 "objectName": "Garbage"
-              },
-              {
-                "objectName": "Battery"
-              },
-              {
-                "objectName": "Plastic"
-              },
-              {
-                "objectName": "Bottle"
-              },
-              {
-                "objectName": "Can"
               }
             ]
           },
@@ -9687,6 +10208,9 @@
             "folderName": "UI",
             "children": [
               {
+                "objectName": "CleanCounter"
+              },
+              {
                 "objectName": "Quest_TXT"
               },
               {
@@ -9707,6 +10231,9 @@
             "folderName": "Bg",
             "children": [
               {
+                "objectName": "Water_transition"
+              },
+              {
                 "objectName": "Bg_Water"
               },
               {
@@ -9718,7 +10245,10 @@
             ]
           },
           {
-            "objectName": "Water_transition"
+            "objectName": "Border"
+          },
+          {
+            "objectName": "Lose_text"
           }
         ]
       },
@@ -10114,6 +10644,35 @@
                       "parameters": [
                         "",
                         "\"Eco_Deck\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Boat",
+                        "Border",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "Boat",
+                        "Border",
+                        ""
                       ]
                     }
                   ]
@@ -10775,6 +11334,7 @@
           "colorG": 0,
           "colorR": 0,
           "creationTime": 0,
+          "folded": true,
           "name": "Trash Logics",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10817,18 +11377,7 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VariableChildCount"
-                      },
-                      "parameters": [
-                        "Trash",
-                        "<=",
-                        "6"
-                      ]
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
@@ -10839,6 +11388,42 @@
                         "Text",
                         "=",
                         "ToString(VariableChildCount(Trash)) + \"/6\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VariableChildCount"
+                      },
+                      "parameters": [
+                        "Trash",
+                        "<=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextObject::ChangeColor"
+                      },
+                      "parameters": [
+                        "Inventory_txt",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "TrashAllowed",
+                        "True",
+                        ""
                       ]
                     }
                   ]
@@ -10953,6 +11538,7 @@
               "colorG": 233,
               "colorR": 184,
               "creationTime": 0,
+              "folded": true,
               "name": "Generate Trash on Invent",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11123,18 +11709,7 @@
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "NumberVariable"
-                              },
-                              "parameters": [
-                                "Index",
-                                "!=",
-                                "0"
-                              ]
-                            }
-                          ],
+                          "conditions": [],
                           "actions": [
                             {
                               "type": {
@@ -11183,11 +11758,6 @@
                                   ]
                                 }
                               ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": []
                             }
                           ]
                         }
@@ -11254,6 +11824,7 @@
                       "conditions": [
                         {
                           "type": {
+                            "inverted": true,
                             "value": "Layer"
                           },
                           "parameters": [
@@ -11278,199 +11849,256 @@
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "DraggableBehavior::Dropped"
-                      },
-                      "parameters": [
-                        "Garbage",
-                        "Draggable"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "ToString(PickedInstancesCount(Garbage))",
-                        "\"info\"",
-                        "\"Drop lek\""
-                      ]
-                    }
-                  ],
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Trash When Dropped",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "CollisionNP"
+                            "value": "DraggableBehavior::Dropped"
                           },
                           "parameters": [
                             "Garbage",
-                            "TrashCan",
-                            "",
-                            "",
-                            ""
+                            "Draggable"
                           ]
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "Tween",
-                            "\"cancel\"",
-                            "Garbage.X",
-                            "Garbage.Y",
-                            "\"linear\"",
-                            "0.3",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ActivateBehavior"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "Draggable",
-                            "yes"
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Garbage",
+                          "conditions": [],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "TrashCan",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "Tween",
+                                    "\"cancel\"",
+                                    "Garbage.X",
+                                    "Garbage.Y",
+                                    "\"linear\"",
+                                    "0.3",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ActivateBehavior"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "Draggable",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "TrashCan",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "ArrayTools::ObjectHasString"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "TrashCan",
+                                    "Isi",
+                                    "Garbage.Animation::Name()",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "Tween",
+                                    "\"cancel\"",
+                                    "Garbage.X",
+                                    "Garbage.Y",
+                                    "\"linear\"",
+                                    "0.3",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "TrashCan",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ArrayTools::ObjectHasString"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "TrashCan",
+                                    "Isi",
+                                    "Garbage.Animation::Name()",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ActivateBehavior"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "Draggable",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Sticker::Sticker::Stick"
+                                  },
+                                  "parameters": [
+                                    "Garbage",
+                                    "Sticker",
+                                    "TrashCan",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": []
+                            }
                           ]
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 35,
+          "colorG": 73,
+          "colorR": 54,
+          "creationTime": 0,
+          "name": "Hitting Obstacle",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "TrashCan",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ArrayTools::ObjectHasString"
-                          },
-                          "parameters": [
-                            "",
-                            "TrashCan",
-                            "Isi",
-                            "Garbage.Animation::Name()",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ActivateBehavior"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "Draggable",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Sticker::Sticker::Stick"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "Sticker",
-                            "TrashCan",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "DebuggerTools::ConsoleLog"
-                          },
-                          "parameters": [
-                            "ToString(PickedInstancesCount(Garbage))",
-                            "\"info\"",
-                            "\"Bener lek\""
-                          ]
-                        }
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Boat",
+                        "Whirlpool",
+                        "",
+                        "",
+                        ""
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "TrashCan",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "ArrayTools::ObjectHasString"
-                          },
-                          "parameters": [
-                            "",
-                            "TrashCan",
-                            "Isi",
-                            "Garbage.Animation::Name()",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                          },
-                          "parameters": [
-                            "Garbage",
-                            "Tween",
-                            "\"cancel\"",
-                            "Garbage.X",
-                            "Garbage.Y",
-                            "\"linear\"",
-                            "0.3",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "DebuggerTools::ConsoleLog"
-                          },
-                          "parameters": [
-                            "ToString(PickedInstancesCount(Garbage))",
-                            "\"info\"",
-                            "\"Salah lek\""
-                          ]
-                        }
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Boat",
+                        "Trunk",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Boat",
+                        "Twig",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
                 }
               ],
-              "parameters": []
+              "actions": []
             }
           ],
           "parameters": []
@@ -11713,7 +12341,7 @@
           "isLocked": false,
           "name": "Eco_Deck",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -11750,6 +12378,72 @@
               "booleanParameters": {
                 "isCastingShadow": true
               }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Win",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Lose",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
             }
           ]
         },
@@ -11813,8 +12507,12 @@
           "type": "AnimatableCapability::AnimatableBehavior"
         },
         {
-          "name": "CancellableDraggable",
-          "type": "CancellableDraggable::CancellableDraggable"
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
         },
         {
           "name": "Effect",
@@ -11823,10 +12521,6 @@
         {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "ObjectStack",
-          "type": "ObjectStack::ObjectStack"
         },
         {
           "name": "Opacity",
@@ -11866,7 +12560,6 @@
       "category": "Input",
       "extensionNamespace": "",
       "fullName": "Platformer and top-down remapper",
-      "gdevelopVersion": ">=5.5.222",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWFscGhhLXctYm94LW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOSwxN0EyLDIgMCAwLDEgNywxNVY3SDlWMTVIMTFWOEgxM1YxNUgxNVY3SDE3VjE1QTIsMiAwIDAsMSAxNSwxN0g5TTUsM0gxOUEyLDIgMCAwLDEgMjEsNVYxOUEyLDIgMCAwLDEgMTksMjFINUEyLDIgMCAwLDEgMywxOVY1QTIsMiAwIDAsMSA1LDNNNSw1VjE5SDE5VjVINVoiIC8+PC9zdmc+",
       "name": "BehaviorRemapper",
@@ -12465,34 +13158,47 @@
               "value": "w",
               "type": "KeyboardKey",
               "label": "Up key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Up"
             },
             {
               "value": "a",
               "type": "KeyboardKey",
               "label": "Left key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Left"
             },
             {
               "value": "d",
               "type": "KeyboardKey",
               "label": "Right key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Right"
             },
             {
               "value": "s",
               "type": "KeyboardKey",
               "label": "Down key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Down"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "TopDownMovementBehavior::TopDownMovementBehavior"
               ],
-              "choices": [],
               "name": "Topdown"
             }
           ],
@@ -13131,40 +13837,56 @@
               "value": "",
               "type": "KeyboardKey",
               "label": "Up key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Up"
             },
             {
               "value": "",
               "type": "KeyboardKey",
               "label": "Left key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Left"
             },
             {
               "value": "",
               "type": "KeyboardKey",
               "label": "Down key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Down"
             },
             {
               "value": "",
               "type": "KeyboardKey",
               "label": "Right key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Right"
             },
             {
               "value": "",
               "type": "KeyboardKey",
               "label": "Jump key",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "Jump"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "PlatformBehavior::PlatformerObjectBehavior"
               ],
-              "choices": [],
               "name": "Platformer"
             }
           ],
@@ -13178,7 +13900,6 @@
       "category": "User interface",
       "extensionNamespace": "",
       "fullName": "Button states and effects",
-      "gdevelopVersion": ">=5.5.222",
       "helpPath": "/objects/button",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWdlc3R1cmUtdGFwLWJ1dHRvbiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMyA1QzE1LjIxIDUgMTcgNi43OSAxNyA5QzE3IDEwLjUgMTYuMiAxMS43NyAxNSAxMi40NlYxMS4yNEMxNS42MSAxMC42OSAxNiA5Ljg5IDE2IDlDMTYgNy4zNCAxNC42NiA2IDEzIDZTMTAgNy4zNCAxMCA5QzEwIDkuODkgMTAuMzkgMTAuNjkgMTEgMTEuMjRWMTIuNDZDOS44IDExLjc3IDkgMTAuNSA5IDlDOSA2Ljc5IDEwLjc5IDUgMTMgNU0yMCAyMC41QzE5Ljk3IDIxLjMyIDE5LjMyIDIxLjk3IDE4LjUgMjJIMTNDMTIuNjIgMjIgMTIuMjYgMjEuODUgMTIgMjEuNTdMOCAxNy4zN0w4Ljc0IDE2LjZDOC45MyAxNi4zOSA5LjIgMTYuMjggOS41IDE2LjI4SDkuN0wxMiAxOFY5QzEyIDguNDUgMTIuNDUgOCAxMyA4UzE0IDguNDUgMTQgOVYxMy40N0wxNS4yMSAxMy42TDE5LjE1IDE1Ljc5QzE5LjY4IDE2LjAzIDIwIDE2LjU2IDIwIDE3LjE0VjIwLjVNMjAgMkg0QzIuOSAyIDIgMi45IDIgNFYxMkMyIDEzLjExIDIuOSAxNCA0IDE0SDhWMTJMNCAxMkw0IDRIMjBMMjAgMTJIMThWMTRIMjBWMTMuOTZMMjAuMDQgMTRDMjEuMTMgMTQgMjIgMTMuMDkgMjIgMTJWNEMyMiAyLjkgMjEuMTEgMiAyMCAyWiIgLz48L3N2Zz4=",
       "name": "ButtonStates",
@@ -14301,6 +15022,8 @@
               "type": "Boolean",
               "label": "",
               "description": "Should check hovering",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "ShouldCheckHovering"
             },
@@ -14308,28 +15031,9 @@
               "value": "Idle",
               "type": "Choice",
               "label": "State",
-              "choices": [
-                {
-                  "label": "Idle",
-                  "value": "Idle"
-                },
-                {
-                  "label": "Hovered",
-                  "value": "Hovered"
-                },
-                {
-                  "label": "PressedInside",
-                  "value": "PressedInside"
-                },
-                {
-                  "label": "PressedOutside",
-                  "value": "PressedOutside"
-                },
-                {
-                  "label": "Validated",
-                  "value": "Validated"
-                }
-              ],
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "State"
             },
@@ -14337,6 +15041,9 @@
               "value": "0",
               "type": "Number",
               "label": "Touch id",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TouchId"
             },
@@ -14344,6 +15051,9 @@
               "value": "",
               "type": "Boolean",
               "label": "Touch is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TouchIsInside"
             },
@@ -14351,6 +15061,9 @@
               "value": "",
               "type": "Boolean",
               "label": "Mouse is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "MouseIsInside"
             },
@@ -14358,6 +15071,9 @@
               "value": "",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "Index"
             }
@@ -14864,27 +15580,31 @@
               "value": "",
               "type": "Behavior",
               "label": "Button states",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
-              "choices": [],
               "name": "ButtonFSM"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Effect capability",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
-              "choices": [],
               "name": "Effect"
             },
             {
               "value": "",
               "type": "String",
               "label": "Idle state effect",
+              "description": "",
               "group": "Effects",
+              "extraInformation": [],
               "name": "IdleEffect"
             },
             {
@@ -14893,13 +15613,16 @@
               "label": "Focused state effect",
               "description": "The state is Focused when the button is hovered or held outside.",
               "group": "Effects",
+              "extraInformation": [],
               "name": "FocusedEffect"
             },
             {
               "value": "",
               "type": "String",
               "label": "Pressed state effect",
+              "description": "",
               "group": "Effects",
+              "extraInformation": [],
               "name": "PressedEffect"
             }
           ],
@@ -15314,27 +16037,31 @@
               "value": "",
               "type": "Behavior",
               "label": "Animatable capability",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "AnimatableCapability::AnimatableBehavior"
               ],
-              "choices": [],
               "name": "Animation"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Button states",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
-              "choices": [],
               "name": "ButtonFSM"
             },
             {
               "value": "Idle",
               "type": "String",
               "label": "Idle state animation name",
+              "description": "",
               "group": "Animation",
+              "extraInformation": [],
               "name": "IdleAnimationName"
             },
             {
@@ -15343,13 +16070,16 @@
               "label": "Focused state animation name",
               "description": "The state is Focused when the button is hovered or held outside.",
               "group": "Animation",
+              "extraInformation": [],
               "name": "FocusedAnimationName"
             },
             {
               "value": "Pressed",
               "type": "String",
               "label": "Pressed state animation name",
+              "description": "",
               "group": "Animation",
+              "extraInformation": [],
               "name": "PressedAnimationName"
             }
           ],
@@ -16718,27 +17448,31 @@
               "value": "",
               "type": "Behavior",
               "label": "Button states",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
-              "choices": [],
               "name": "ButtonFSM"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Effect capability",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
-              "choices": [],
               "name": "Effect"
             },
             {
               "value": "Effect",
               "type": "String",
               "label": "Effect name",
+              "description": "",
               "group": "Effect",
+              "extraInformation": [],
               "name": "EffectName"
             },
             {
@@ -16747,13 +17481,16 @@
               "label": "Effect parameter",
               "description": "The effect parameter names can be found in the effects tab with the \"Show parameter names\" action of the drop down menu.",
               "group": "Effect",
+              "extraInformation": [],
               "name": "EffectProperty"
             },
             {
               "value": "0",
               "type": "Number",
               "label": "Idle effect parameter value",
+              "description": "",
               "group": "Value",
+              "extraInformation": [],
               "name": "IdleValue"
             },
             {
@@ -16762,295 +17499,34 @@
               "label": "Focused effect parameter value",
               "description": "The state is Focused when the button is hovered or held outside.",
               "group": "Value",
+              "extraInformation": [],
               "name": "FocusedValue"
             },
             {
               "value": "0",
               "type": "Number",
               "label": "Pressed effect parameter value",
+              "description": "",
               "group": "Value",
+              "extraInformation": [],
               "name": "PressedValue"
             },
             {
               "value": "easeInOutQuad",
               "type": "Choice",
               "label": "Fade-in easing",
+              "description": "",
               "group": "Speed",
-              "choices": [
-                {
-                  "label": "linear",
-                  "value": "linear"
-                },
-                {
-                  "label": "easeInQuad",
-                  "value": "easeInQuad"
-                },
-                {
-                  "label": "easeOutQuad",
-                  "value": "easeOutQuad"
-                },
-                {
-                  "label": "easeInOutQuad",
-                  "value": "easeInOutQuad"
-                },
-                {
-                  "label": "easeInCubic",
-                  "value": "easeInCubic"
-                },
-                {
-                  "label": "easeOutCubic",
-                  "value": "easeOutCubic"
-                },
-                {
-                  "label": "easeInOutCubic",
-                  "value": "easeInOutCubic"
-                },
-                {
-                  "label": "easeInQuart",
-                  "value": "easeInQuart"
-                },
-                {
-                  "label": "easeOutQuart",
-                  "value": "easeOutQuart"
-                },
-                {
-                  "label": "easeInOutQuart",
-                  "value": "easeInOutQuart"
-                },
-                {
-                  "label": "easeInQuint",
-                  "value": "easeInQuint"
-                },
-                {
-                  "label": "easeOutQuint",
-                  "value": "easeOutQuint"
-                },
-                {
-                  "label": "easeInOutQuint",
-                  "value": "easeInOutQuint"
-                },
-                {
-                  "label": "easeInOutSine",
-                  "value": "easeInOutSine"
-                },
-                {
-                  "label": "easeInExpo",
-                  "value": "easeInExpo"
-                },
-                {
-                  "label": "easeOutExpo",
-                  "value": "easeOutExpo"
-                },
-                {
-                  "label": "easeInOutExpo",
-                  "value": "easeInOutExpo"
-                },
-                {
-                  "label": "easeInCirc",
-                  "value": "easeInCirc"
-                },
-                {
-                  "label": "easeOutCirc",
-                  "value": "easeOutCirc"
-                },
-                {
-                  "label": "easeInOutCirc",
-                  "value": "easeInOutCirc"
-                },
-                {
-                  "label": "easeOutBounce",
-                  "value": "easeOutBounce"
-                },
-                {
-                  "label": "easeInBack",
-                  "value": "easeInBack"
-                },
-                {
-                  "label": "easeOutBack",
-                  "value": "easeOutBack"
-                },
-                {
-                  "label": "easeInOutBack",
-                  "value": "easeInOutBack"
-                },
-                {
-                  "label": "elastic",
-                  "value": "elastic"
-                },
-                {
-                  "label": "swingFromTo",
-                  "value": "swingFromTo"
-                },
-                {
-                  "label": "swingFrom",
-                  "value": "swingFrom"
-                },
-                {
-                  "label": "swingTo",
-                  "value": "swingTo"
-                },
-                {
-                  "label": "bounce",
-                  "value": "bounce"
-                },
-                {
-                  "label": "bouncePast",
-                  "value": "bouncePast"
-                },
-                {
-                  "label": "easeFromTo",
-                  "value": "easeFromTo"
-                },
-                {
-                  "label": "easeFrom",
-                  "value": "easeFrom"
-                },
-                {
-                  "label": "easeTo",
-                  "value": "easeTo"
-                }
-              ],
+              "extraInformation": [],
               "name": "FadeInEasing"
             },
             {
               "value": "easeInOutQuad",
               "type": "Choice",
               "label": "Fade-out easing",
+              "description": "",
               "group": "Speed",
-              "choices": [
-                {
-                  "label": "linear",
-                  "value": "linear"
-                },
-                {
-                  "label": "easeInQuad",
-                  "value": "easeInQuad"
-                },
-                {
-                  "label": "easeOutQuad",
-                  "value": "easeOutQuad"
-                },
-                {
-                  "label": "easeInOutQuad",
-                  "value": "easeInOutQuad"
-                },
-                {
-                  "label": "easeInCubic",
-                  "value": "easeInCubic"
-                },
-                {
-                  "label": "easeOutCubic",
-                  "value": "easeOutCubic"
-                },
-                {
-                  "label": "easeInOutCubic",
-                  "value": "easeInOutCubic"
-                },
-                {
-                  "label": "easeInQuart",
-                  "value": "easeInQuart"
-                },
-                {
-                  "label": "easeOutQuart",
-                  "value": "easeOutQuart"
-                },
-                {
-                  "label": "easeInOutQuart",
-                  "value": "easeInOutQuart"
-                },
-                {
-                  "label": "easeInQuint",
-                  "value": "easeInQuint"
-                },
-                {
-                  "label": "easeOutQuint",
-                  "value": "easeOutQuint"
-                },
-                {
-                  "label": "easeInOutQuint",
-                  "value": "easeInOutQuint"
-                },
-                {
-                  "label": "easeInOutSine",
-                  "value": "easeInOutSine"
-                },
-                {
-                  "label": "easeInExpo",
-                  "value": "easeInExpo"
-                },
-                {
-                  "label": "easeOutExpo",
-                  "value": "easeOutExpo"
-                },
-                {
-                  "label": "easeInOutExpo",
-                  "value": "easeInOutExpo"
-                },
-                {
-                  "label": "easeInCirc",
-                  "value": "easeInCirc"
-                },
-                {
-                  "label": "easeOutCirc",
-                  "value": "easeOutCirc"
-                },
-                {
-                  "label": "easeInOutCirc",
-                  "value": "easeInOutCirc"
-                },
-                {
-                  "label": "easeOutBounce",
-                  "value": "easeOutBounce"
-                },
-                {
-                  "label": "easeInBack",
-                  "value": "easeInBack"
-                },
-                {
-                  "label": "easeOutBack",
-                  "value": "easeOutBack"
-                },
-                {
-                  "label": "easeInOutBack",
-                  "value": "easeInOutBack"
-                },
-                {
-                  "label": "elastic",
-                  "value": "elastic"
-                },
-                {
-                  "label": "swingFromTo",
-                  "value": "swingFromTo"
-                },
-                {
-                  "label": "swingFrom",
-                  "value": "swingFrom"
-                },
-                {
-                  "label": "swingTo",
-                  "value": "swingTo"
-                },
-                {
-                  "label": "bounce",
-                  "value": "bounce"
-                },
-                {
-                  "label": "bouncePast",
-                  "value": "bouncePast"
-                },
-                {
-                  "label": "easeFromTo",
-                  "value": "easeFromTo"
-                },
-                {
-                  "label": "easeFrom",
-                  "value": "easeFrom"
-                },
-                {
-                  "label": "easeTo",
-                  "value": "easeTo"
-                }
-              ],
+              "extraInformation": [],
               "name": "FadeOutEasing"
             },
             {
@@ -17058,7 +17534,9 @@
               "type": "Number",
               "unit": "Second",
               "label": "Fade-in duration",
+              "description": "",
               "group": "Speed",
+              "extraInformation": [],
               "name": "FadeInDuration"
             },
             {
@@ -17066,27 +17544,18 @@
               "type": "Number",
               "unit": "Second",
               "label": "Fade-out duration",
+              "description": "",
               "group": "Speed",
+              "extraInformation": [],
               "name": "FadeOutDuration"
             },
             {
               "value": "Idle",
               "type": "Choice",
               "label": "",
-              "choices": [
-                {
-                  "label": "Idle",
-                  "value": "Idle"
-                },
-                {
-                  "label": "Focused",
-                  "value": "Focused"
-                },
-                {
-                  "label": "Pressed",
-                  "value": "Pressed"
-                }
-              ],
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "PreviousState"
             },
@@ -17094,6 +17563,9 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TweenInitialValue"
             },
@@ -17101,6 +17573,9 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TweenTargetedValue"
             },
@@ -17108,6 +17583,9 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TweenTime"
             },
@@ -17115,20 +17593,9 @@
               "value": "NoTween",
               "type": "Choice",
               "label": "",
-              "choices": [
-                {
-                  "label": "NoTween",
-                  "value": "NoTween"
-                },
-                {
-                  "label": "FadeIn",
-                  "value": "FadeIn"
-                },
-                {
-                  "label": "FadeOut",
-                  "value": "FadeOut"
-                }
-              ],
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TweenState"
             },
@@ -17136,6 +17603,9 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "EffectValue"
             }
@@ -18079,30 +18549,33 @@
               "value": "",
               "type": "Behavior",
               "label": "Scalable capability",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "ScalableCapability::ScalableBehavior"
               ],
-              "choices": [],
               "name": "Scale"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Button states behavior (required)",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
-              "choices": [],
               "name": "ButtonFSM"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Tween behavior (required)",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
-              "choices": [],
               "name": "Tween"
             },
             {
@@ -18110,7 +18583,9 @@
               "type": "Number",
               "unit": "Dimensionless",
               "label": "Idle state size scale",
+              "description": "",
               "group": "Size",
+              "extraInformation": [],
               "name": "IdleScale"
             },
             {
@@ -18120,6 +18595,7 @@
               "label": "Focused state size scale",
               "description": "The state is Focused when the button is hovered or held outside.",
               "group": "Size",
+              "extraInformation": [],
               "name": "FocusedScale"
             },
             {
@@ -18127,7 +18603,9 @@
               "type": "Number",
               "unit": "Second",
               "label": "Fade-in duration",
+              "description": "",
               "group": "Speed",
+              "extraInformation": [],
               "name": "FadeInDuration"
             },
             {
@@ -18135,7 +18613,9 @@
               "type": "Number",
               "unit": "Second",
               "label": "Fade-out duration",
+              "description": "",
               "group": "Speed",
+              "extraInformation": [],
               "name": "FadeOutDuration"
             },
             {
@@ -18143,309 +18623,36 @@
               "type": "Number",
               "unit": "Dimensionless",
               "label": "Pressed state size scale",
+              "description": "",
               "group": "Size",
+              "extraInformation": [],
               "name": "PressedScale"
             },
             {
               "value": "easeInOutQuad",
               "type": "Choice",
               "label": "Fade-in easing",
+              "description": "",
               "group": "Speed",
-              "choices": [
-                {
-                  "label": "linear",
-                  "value": "linear"
-                },
-                {
-                  "label": "easeInQuad",
-                  "value": "easeInQuad"
-                },
-                {
-                  "label": "easeOutQuad",
-                  "value": "easeOutQuad"
-                },
-                {
-                  "label": "easeInOutQuad",
-                  "value": "easeInOutQuad"
-                },
-                {
-                  "label": "easeInCubic",
-                  "value": "easeInCubic"
-                },
-                {
-                  "label": "easeOutCubic",
-                  "value": "easeOutCubic"
-                },
-                {
-                  "label": "easeInOutCubic",
-                  "value": "easeInOutCubic"
-                },
-                {
-                  "label": "easeInQuart",
-                  "value": "easeInQuart"
-                },
-                {
-                  "label": "easeOutQuart",
-                  "value": "easeOutQuart"
-                },
-                {
-                  "label": "easeInOutQuart",
-                  "value": "easeInOutQuart"
-                },
-                {
-                  "label": "easeInQuint",
-                  "value": "easeInQuint"
-                },
-                {
-                  "label": "easeOutQuint",
-                  "value": "easeOutQuint"
-                },
-                {
-                  "label": "easeInOutQuint",
-                  "value": "easeInOutQuint"
-                },
-                {
-                  "label": "easeInOutSine",
-                  "value": "easeInOutSine"
-                },
-                {
-                  "label": "easeInExpo",
-                  "value": "easeInExpo"
-                },
-                {
-                  "label": "easeOutExpo",
-                  "value": "easeOutExpo"
-                },
-                {
-                  "label": "easeInOutExpo",
-                  "value": "easeInOutExpo"
-                },
-                {
-                  "label": "easeInCirc",
-                  "value": "easeInCirc"
-                },
-                {
-                  "label": "easeOutCirc",
-                  "value": "easeOutCirc"
-                },
-                {
-                  "label": "easeInOutCirc",
-                  "value": "easeInOutCirc"
-                },
-                {
-                  "label": "easeOutBounce",
-                  "value": "easeOutBounce"
-                },
-                {
-                  "label": "easeInBack",
-                  "value": "easeInBack"
-                },
-                {
-                  "label": "easeOutBack",
-                  "value": "easeOutBack"
-                },
-                {
-                  "label": "easeInOutBack",
-                  "value": "easeInOutBack"
-                },
-                {
-                  "label": "elastic",
-                  "value": "elastic"
-                },
-                {
-                  "label": "swingFromTo",
-                  "value": "swingFromTo"
-                },
-                {
-                  "label": "swingFrom",
-                  "value": "swingFrom"
-                },
-                {
-                  "label": "swingTo",
-                  "value": "swingTo"
-                },
-                {
-                  "label": "bounce",
-                  "value": "bounce"
-                },
-                {
-                  "label": "bouncePast",
-                  "value": "bouncePast"
-                },
-                {
-                  "label": "easeFromTo",
-                  "value": "easeFromTo"
-                },
-                {
-                  "label": "easeFrom",
-                  "value": "easeFrom"
-                },
-                {
-                  "label": "easeTo",
-                  "value": "easeTo"
-                }
-              ],
+              "extraInformation": [],
               "name": "FadeInEasing"
             },
             {
               "value": "easeInOutQuad",
               "type": "Choice",
               "label": "Fade-out easing",
+              "description": "",
               "group": "Speed",
-              "choices": [
-                {
-                  "label": "linear",
-                  "value": "linear"
-                },
-                {
-                  "label": "easeInQuad",
-                  "value": "easeInQuad"
-                },
-                {
-                  "label": "easeOutQuad",
-                  "value": "easeOutQuad"
-                },
-                {
-                  "label": "easeInOutQuad",
-                  "value": "easeInOutQuad"
-                },
-                {
-                  "label": "easeInCubic",
-                  "value": "easeInCubic"
-                },
-                {
-                  "label": "easeOutCubic",
-                  "value": "easeOutCubic"
-                },
-                {
-                  "label": "easeInOutCubic",
-                  "value": "easeInOutCubic"
-                },
-                {
-                  "label": "easeInQuart",
-                  "value": "easeInQuart"
-                },
-                {
-                  "label": "easeOutQuart",
-                  "value": "easeOutQuart"
-                },
-                {
-                  "label": "easeInOutQuart",
-                  "value": "easeInOutQuart"
-                },
-                {
-                  "label": "easeInQuint",
-                  "value": "easeInQuint"
-                },
-                {
-                  "label": "easeOutQuint",
-                  "value": "easeOutQuint"
-                },
-                {
-                  "label": "easeInOutQuint",
-                  "value": "easeInOutQuint"
-                },
-                {
-                  "label": "easeInOutSine",
-                  "value": "easeInOutSine"
-                },
-                {
-                  "label": "easeInExpo",
-                  "value": "easeInExpo"
-                },
-                {
-                  "label": "easeOutExpo",
-                  "value": "easeOutExpo"
-                },
-                {
-                  "label": "easeInOutExpo",
-                  "value": "easeInOutExpo"
-                },
-                {
-                  "label": "easeInCirc",
-                  "value": "easeInCirc"
-                },
-                {
-                  "label": "easeOutCirc",
-                  "value": "easeOutCirc"
-                },
-                {
-                  "label": "easeInOutCirc",
-                  "value": "easeInOutCirc"
-                },
-                {
-                  "label": "easeOutBounce",
-                  "value": "easeOutBounce"
-                },
-                {
-                  "label": "easeInBack",
-                  "value": "easeInBack"
-                },
-                {
-                  "label": "easeOutBack",
-                  "value": "easeOutBack"
-                },
-                {
-                  "label": "easeInOutBack",
-                  "value": "easeInOutBack"
-                },
-                {
-                  "label": "elastic",
-                  "value": "elastic"
-                },
-                {
-                  "label": "swingFromTo",
-                  "value": "swingFromTo"
-                },
-                {
-                  "label": "swingFrom",
-                  "value": "swingFrom"
-                },
-                {
-                  "label": "swingTo",
-                  "value": "swingTo"
-                },
-                {
-                  "label": "bounce",
-                  "value": "bounce"
-                },
-                {
-                  "label": "bouncePast",
-                  "value": "bouncePast"
-                },
-                {
-                  "label": "easeFromTo",
-                  "value": "easeFromTo"
-                },
-                {
-                  "label": "easeFrom",
-                  "value": "easeFrom"
-                },
-                {
-                  "label": "easeTo",
-                  "value": "easeTo"
-                }
-              ],
+              "extraInformation": [],
               "name": "FadeOutEasing"
             },
             {
               "value": "Idle",
               "type": "Choice",
               "label": "",
-              "choices": [
-                {
-                  "label": "Idle",
-                  "value": "Idle"
-                },
-                {
-                  "label": "Focused",
-                  "value": "Focused"
-                },
-                {
-                  "label": "Pressed",
-                  "value": "Pressed"
-                }
-              ],
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "PreviousState"
             }
@@ -19403,27 +19610,31 @@
               "value": "",
               "type": "Behavior",
               "label": "Button states",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
-              "choices": [],
               "name": "ButtonFSM"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Tween",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
-              "choices": [],
               "name": "Tween"
             },
             {
               "value": "255;255;255",
               "type": "Color",
               "label": "Idle state color tint",
+              "description": "",
               "group": "Color",
+              "extraInformation": [],
               "name": "IdleColorTint"
             },
             {
@@ -19432,13 +19643,16 @@
               "label": "Focused state color tint",
               "description": "The state is Focused when the button is hovered or held outside.",
               "group": "Color",
+              "extraInformation": [],
               "name": "FocusedColorTint"
             },
             {
               "value": "64;64;64",
               "type": "Color",
               "label": "Pressed state color tint",
+              "description": "",
               "group": "Color",
+              "extraInformation": [],
               "name": "PressedColorTint"
             },
             {
@@ -19446,7 +19660,9 @@
               "type": "Number",
               "unit": "Second",
               "label": "Fade-in duration",
+              "description": "",
               "group": "Speed",
+              "extraInformation": [],
               "name": "FadeInDuration"
             },
             {
@@ -19454,309 +19670,36 @@
               "type": "Number",
               "unit": "Second",
               "label": "Fade-out duration",
+              "description": "",
               "group": "Speed",
+              "extraInformation": [],
               "name": "FadeOutDuration"
             },
             {
               "value": "easeInOutQuad",
               "type": "Choice",
               "label": "Fade-in easing",
+              "description": "",
               "group": "Speed",
-              "choices": [
-                {
-                  "label": "linear",
-                  "value": "linear"
-                },
-                {
-                  "label": "easeInQuad",
-                  "value": "easeInQuad"
-                },
-                {
-                  "label": "easeOutQuad",
-                  "value": "easeOutQuad"
-                },
-                {
-                  "label": "easeInOutQuad",
-                  "value": "easeInOutQuad"
-                },
-                {
-                  "label": "easeInCubic",
-                  "value": "easeInCubic"
-                },
-                {
-                  "label": "easeOutCubic",
-                  "value": "easeOutCubic"
-                },
-                {
-                  "label": "easeInOutCubic",
-                  "value": "easeInOutCubic"
-                },
-                {
-                  "label": "easeInQuart",
-                  "value": "easeInQuart"
-                },
-                {
-                  "label": "easeOutQuart",
-                  "value": "easeOutQuart"
-                },
-                {
-                  "label": "easeInOutQuart",
-                  "value": "easeInOutQuart"
-                },
-                {
-                  "label": "easeInQuint",
-                  "value": "easeInQuint"
-                },
-                {
-                  "label": "easeOutQuint",
-                  "value": "easeOutQuint"
-                },
-                {
-                  "label": "easeInOutQuint",
-                  "value": "easeInOutQuint"
-                },
-                {
-                  "label": "easeInOutSine",
-                  "value": "easeInOutSine"
-                },
-                {
-                  "label": "easeInExpo",
-                  "value": "easeInExpo"
-                },
-                {
-                  "label": "easeOutExpo",
-                  "value": "easeOutExpo"
-                },
-                {
-                  "label": "easeInOutExpo",
-                  "value": "easeInOutExpo"
-                },
-                {
-                  "label": "easeInCirc",
-                  "value": "easeInCirc"
-                },
-                {
-                  "label": "easeOutCirc",
-                  "value": "easeOutCirc"
-                },
-                {
-                  "label": "easeInOutCirc",
-                  "value": "easeInOutCirc"
-                },
-                {
-                  "label": "easeOutBounce",
-                  "value": "easeOutBounce"
-                },
-                {
-                  "label": "easeInBack",
-                  "value": "easeInBack"
-                },
-                {
-                  "label": "easeOutBack",
-                  "value": "easeOutBack"
-                },
-                {
-                  "label": "easeInOutBack",
-                  "value": "easeInOutBack"
-                },
-                {
-                  "label": "elastic",
-                  "value": "elastic"
-                },
-                {
-                  "label": "swingFromTo",
-                  "value": "swingFromTo"
-                },
-                {
-                  "label": "swingFrom",
-                  "value": "swingFrom"
-                },
-                {
-                  "label": "swingTo",
-                  "value": "swingTo"
-                },
-                {
-                  "label": "bounce",
-                  "value": "bounce"
-                },
-                {
-                  "label": "bouncePast",
-                  "value": "bouncePast"
-                },
-                {
-                  "label": "easeFromTo",
-                  "value": "easeFromTo"
-                },
-                {
-                  "label": "easeFrom",
-                  "value": "easeFrom"
-                },
-                {
-                  "label": "easeTo",
-                  "value": "easeTo"
-                }
-              ],
+              "extraInformation": [],
               "name": "FadeInEasing"
             },
             {
               "value": "easeInOutQuad",
               "type": "Choice",
               "label": "Fade-out easing",
+              "description": "",
               "group": "Speed",
-              "choices": [
-                {
-                  "label": "linear",
-                  "value": "linear"
-                },
-                {
-                  "label": "easeInQuad",
-                  "value": "easeInQuad"
-                },
-                {
-                  "label": "easeOutQuad",
-                  "value": "easeOutQuad"
-                },
-                {
-                  "label": "easeInOutQuad",
-                  "value": "easeInOutQuad"
-                },
-                {
-                  "label": "easeInCubic",
-                  "value": "easeInCubic"
-                },
-                {
-                  "label": "easeOutCubic",
-                  "value": "easeOutCubic"
-                },
-                {
-                  "label": "easeInOutCubic",
-                  "value": "easeInOutCubic"
-                },
-                {
-                  "label": "easeInQuart",
-                  "value": "easeInQuart"
-                },
-                {
-                  "label": "easeOutQuart",
-                  "value": "easeOutQuart"
-                },
-                {
-                  "label": "easeInOutQuart",
-                  "value": "easeInOutQuart"
-                },
-                {
-                  "label": "easeInQuint",
-                  "value": "easeInQuint"
-                },
-                {
-                  "label": "easeOutQuint",
-                  "value": "easeOutQuint"
-                },
-                {
-                  "label": "easeInOutQuint",
-                  "value": "easeInOutQuint"
-                },
-                {
-                  "label": "easeInOutSine",
-                  "value": "easeInOutSine"
-                },
-                {
-                  "label": "easeInExpo",
-                  "value": "easeInExpo"
-                },
-                {
-                  "label": "easeOutExpo",
-                  "value": "easeOutExpo"
-                },
-                {
-                  "label": "easeInOutExpo",
-                  "value": "easeInOutExpo"
-                },
-                {
-                  "label": "easeInCirc",
-                  "value": "easeInCirc"
-                },
-                {
-                  "label": "easeOutCirc",
-                  "value": "easeOutCirc"
-                },
-                {
-                  "label": "easeInOutCirc",
-                  "value": "easeInOutCirc"
-                },
-                {
-                  "label": "easeOutBounce",
-                  "value": "easeOutBounce"
-                },
-                {
-                  "label": "easeInBack",
-                  "value": "easeInBack"
-                },
-                {
-                  "label": "easeOutBack",
-                  "value": "easeOutBack"
-                },
-                {
-                  "label": "easeInOutBack",
-                  "value": "easeInOutBack"
-                },
-                {
-                  "label": "elastic",
-                  "value": "elastic"
-                },
-                {
-                  "label": "swingFromTo",
-                  "value": "swingFromTo"
-                },
-                {
-                  "label": "swingFrom",
-                  "value": "swingFrom"
-                },
-                {
-                  "label": "swingTo",
-                  "value": "swingTo"
-                },
-                {
-                  "label": "bounce",
-                  "value": "bounce"
-                },
-                {
-                  "label": "bouncePast",
-                  "value": "bouncePast"
-                },
-                {
-                  "label": "easeFromTo",
-                  "value": "easeFromTo"
-                },
-                {
-                  "label": "easeFrom",
-                  "value": "easeFrom"
-                },
-                {
-                  "label": "easeTo",
-                  "value": "easeTo"
-                }
-              ],
+              "extraInformation": [],
               "name": "FadeOutEasing"
             },
             {
               "value": "Idle",
               "type": "Choice",
               "label": "",
-              "choices": [
-                {
-                  "label": "Idle",
-                  "value": "Idle"
-                },
-                {
-                  "label": "Focused",
-                  "value": "Focused"
-                },
-                {
-                  "label": "Pressed",
-                  "value": "Pressed"
-                }
-              ],
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "PreviousState"
             }
@@ -19771,7 +19714,6 @@
       "category": "User interface",
       "extensionNamespace": "",
       "fullName": "Slider",
-      "gdevelopVersion": ">=5.5.230",
       "helpPath": "/objects/slider",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMjMiIGN5PSI3IiByPSIzIi8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMyIgeTE9IjciIHgyPSIyMCIgeTI9IjciLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIyOSIgeTE9IjciIHgyPSIyNiIgeTI9IjciLz4NCjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjEyIiBjeT0iMTYiIHI9IjMiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIzIiB5MT0iMTYiIHgyPSI5IiB5Mj0iMTYiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIyOSIgeTE9IjE2IiB4Mj0iMTUiIHkyPSIxNiIvPg0KPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMjMiIGN5PSIyNSIgcj0iMyIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjMiIHkxPSIyNSIgeDI9IjIwIiB5Mj0iMjUiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIyOSIgeTE9IjI1IiB4Mj0iMjYiIHkyPSIyNSIvPg0KPC9zdmc+DQo=",
       "name": "PanelSpriteSlider",
@@ -19796,12 +19738,6 @@
       "authorIds": [
         "IWykYNRvhCZBN3vEgKEbBPOR3Oc2",
         "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
-      ],
-      "changelog": [
-        {
-          "version": "2.0.0",
-          "breaking": "- Sliders now use \"variants\", allowing easy swapping of their visual aspect. You will have to make some adjustments to existing sliders in your project. Follow this [migration documentation](https://wiki.gdevelop.io/gdevelop5/objects/custom-objects-prefab-template/migrate-to-variants/) to do these changes."
-        }
       ],
       "dependencies": [],
       "globalVariables": [],
@@ -20277,24 +20213,36 @@
               "value": "0",
               "type": "Number",
               "label": "Value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "CurrentValue"
             },
             {
               "value": "0",
               "type": "Number",
               "label": "Minimum value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "MinValue"
             },
             {
               "value": "1",
               "type": "Number",
               "label": "Maximum value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "MaxValue"
             },
             {
               "value": "0",
               "type": "Number",
               "label": "Step size",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "StepSize"
             }
           ],
@@ -21365,6 +21313,8 @@
               "type": "Boolean",
               "label": "",
               "description": "Should check hovering",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "ShouldCheckHovering"
             },
@@ -21372,28 +21322,9 @@
               "value": "Idle",
               "type": "Choice",
               "label": "State",
-              "choices": [
-                {
-                  "label": "Idle",
-                  "value": "Idle"
-                },
-                {
-                  "label": "Hovered",
-                  "value": "Hovered"
-                },
-                {
-                  "label": "PressedInside",
-                  "value": "PressedInside"
-                },
-                {
-                  "label": "PressedOutside",
-                  "value": "PressedOutside"
-                },
-                {
-                  "label": "Validated",
-                  "value": "Validated"
-                }
-              ],
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "State"
             },
@@ -21401,6 +21332,9 @@
               "value": "0",
               "type": "Number",
               "label": "Touch id",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TouchId"
             },
@@ -21408,6 +21342,9 @@
               "value": "",
               "type": "Boolean",
               "label": "Touch is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "TouchIsInside"
             },
@@ -21415,6 +21352,9 @@
               "value": "",
               "type": "Boolean",
               "label": "Mouse is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "MouseIsInside"
             },
@@ -21422,6 +21362,9 @@
               "value": "",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "Index"
             }
@@ -21443,254 +21386,6 @@
           "isInnerAreaFollowingParentSize": true,
           "isUsingLegacyInstancesRenderer": false,
           "name": "PanelSpriteSlider",
-          "objects": [
-            {
-              "assetStoreId": "",
-              "bold": false,
-              "italic": false,
-              "name": "Label",
-              "smoothed": true,
-              "type": "TextObject::Text",
-              "underlined": false,
-              "variables": [],
-              "effects": [],
-              "behaviors": [],
-              "string": "It displays the value when it changes.",
-              "font": "",
-              "textAlignment": "",
-              "characterSize": 20,
-              "color": {
-                "b": 0,
-                "g": 0,
-                "r": 0
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "It displays the value when it changes.",
-                "font": "",
-                "textAlignment": "",
-                "verticalTextAlignment": "top",
-                "characterSize": 20,
-                "lineHeight": 0,
-                "color": "0;0;0"
-              }
-            },
-            {
-              "assetStoreId": "",
-              "bottomMargin": 0,
-              "height": 32,
-              "leftMargin": 0,
-              "name": "Thumb",
-              "rightMargin": 0,
-              "texture": "",
-              "tiled": false,
-              "topMargin": 0,
-              "type": "PanelSpriteObject::PanelSprite",
-              "width": 32,
-              "variables": [],
-              "effects": [],
-              "behaviors": [
-                {
-                  "name": "Anchor",
-                  "type": "AnchorBehavior::AnchorBehavior",
-                  "bottomEdgeAnchor": 4,
-                  "leftEdgeAnchor": 0,
-                  "relativeToOriginalWindowSize": true,
-                  "rightEdgeAnchor": 2,
-                  "topEdgeAnchor": 4,
-                  "useLegacyBottomAndRightAnchors": false
-                },
-                {
-                  "name": "Draggable",
-                  "type": "DraggableBehavior::Draggable",
-                  "checkCollisionMask": false
-                }
-              ]
-            },
-            {
-              "assetStoreId": "",
-              "bottomMargin": 0,
-              "height": 32,
-              "leftMargin": 0,
-              "name": "FillBar",
-              "rightMargin": 0,
-              "texture": "",
-              "tiled": false,
-              "topMargin": 0,
-              "type": "PanelSpriteObject::PanelSprite",
-              "width": 32,
-              "variables": [],
-              "effects": [],
-              "behaviors": [
-                {
-                  "name": "Anchor",
-                  "type": "AnchorBehavior::AnchorBehavior",
-                  "bottomEdgeAnchor": 2,
-                  "leftEdgeAnchor": 1,
-                  "topEdgeAnchor": 1,
-                  "relativeToOriginalWindowSize": true,
-                  "rightEdgeAnchor": 2,
-                  "useLegacyBottomAndRightAnchors": false
-                },
-                {
-                  "name": "Slider",
-                  "type": "PanelSpriteSlider::Slider",
-                  "Value": 0,
-                  "MinValue": 0,
-                  "MaxValue": 1,
-                  "StepSize": 1
-                }
-              ]
-            },
-            {
-              "assetStoreId": "",
-              "bottomMargin": 0,
-              "height": 32,
-              "leftMargin": 0,
-              "name": "Background",
-              "rightMargin": 0,
-              "texture": "",
-              "tiled": false,
-              "topMargin": 0,
-              "type": "PanelSpriteObject::PanelSprite",
-              "width": 32,
-              "variables": [],
-              "effects": [],
-              "behaviors": [
-                {
-                  "name": "Anchor",
-                  "type": "AnchorBehavior::AnchorBehavior",
-                  "bottomEdgeAnchor": 2,
-                  "leftEdgeAnchor": 1,
-                  "topEdgeAnchor": 1,
-                  "relativeToOriginalWindowSize": true,
-                  "rightEdgeAnchor": 2,
-                  "useLegacyBottomAndRightAnchors": false
-                },
-                {
-                  "name": "ButtonFSM",
-                  "type": "PanelSpriteSlider::ButtonFSM",
-                  "ShouldCheckHovering": true,
-                  "State": "Idle",
-                  "TouchId": 0,
-                  "TouchIsInside": false,
-                  "MouseIsInside": false,
-                  "Index": 0
-                }
-              ]
-            }
-          ],
-          "objectsFolderStructure": {
-            "folderName": "__ROOT",
-            "children": [
-              {
-                "objectName": "Label"
-              },
-              {
-                "objectName": "Thumb"
-              },
-              {
-                "objectName": "FillBar"
-              },
-              {
-                "objectName": "Background"
-              }
-            ]
-          },
-          "objectsGroups": [],
-          "layers": [
-            {
-              "ambientLightColorB": 200,
-              "ambientLightColorG": 200,
-              "ambientLightColorR": 200,
-              "camera3DFarPlaneDistance": 10000,
-              "camera3DFieldOfView": 45,
-              "camera3DNearPlaneDistance": 3,
-              "cameraType": "",
-              "followBaseLayerCamera": false,
-              "isLightingLayer": false,
-              "isLocked": false,
-              "name": "",
-              "renderingType": "",
-              "visibility": true,
-              "cameras": [
-                {
-                  "defaultSize": true,
-                  "defaultViewport": true,
-                  "height": 0,
-                  "viewportBottom": 1,
-                  "viewportLeft": 0,
-                  "viewportRight": 1,
-                  "viewportTop": 0,
-                  "width": 0
-                }
-              ],
-              "effects": []
-            }
-          ],
-          "instances": [
-            {
-              "angle": 0,
-              "customSize": true,
-              "depth": 0,
-              "height": 64,
-              "layer": "",
-              "name": "Background",
-              "persistentUuid": "7b36a716-8a01-496a-ad7d-0de60daff8f9",
-              "width": 256,
-              "x": 0,
-              "y": 0,
-              "zOrder": 1,
-              "numberProperties": [],
-              "stringProperties": [],
-              "initialVariables": []
-            },
-            {
-              "angle": 0,
-              "customSize": true,
-              "depth": 1,
-              "height": 44,
-              "layer": "",
-              "name": "FillBar",
-              "persistentUuid": "e775f69e-7845-4103-8a05-5266aba60742",
-              "width": 236,
-              "x": 10,
-              "y": 10,
-              "zOrder": 2,
-              "numberProperties": [],
-              "stringProperties": [],
-              "initialVariables": []
-            },
-            {
-              "angle": 0,
-              "customSize": true,
-              "depth": 1,
-              "height": 84,
-              "layer": "",
-              "name": "Thumb",
-              "persistentUuid": "476a27da-e34f-451f-b660-04a6bbefddbe",
-              "width": 32,
-              "x": 230,
-              "y": -10,
-              "zOrder": 3,
-              "numberProperties": [],
-              "stringProperties": [],
-              "initialVariables": []
-            }
-          ],
-          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -23337,12 +23032,12 @@
               "value": "0",
               "type": "Number",
               "label": "Bar left margin",
+              "description": "",
               "group": "Bar",
               "extraInformation": [
                 "Label",
                 "FillBar"
               ],
-              "choices": [],
               "hidden": true,
               "name": "BarLeftPadding"
             },
@@ -23350,12 +23045,12 @@
               "value": "0",
               "type": "Number",
               "label": "Bar top margin",
+              "description": "",
               "group": "Bar",
               "extraInformation": [
                 "Label",
                 "FillBar"
               ],
-              "choices": [],
               "hidden": true,
               "name": "BarTopPadding"
             },
@@ -23363,12 +23058,12 @@
               "value": "0",
               "type": "Number",
               "label": "Bar right margin",
+              "description": "",
               "group": "Bar",
               "extraInformation": [
                 "Label",
                 "FillBar"
               ],
-              "choices": [],
               "hidden": true,
               "name": "BarRightPadding"
             },
@@ -23376,12 +23071,12 @@
               "value": "0",
               "type": "Number",
               "label": "Bar bottom margin",
+              "description": "",
               "group": "Bar",
               "extraInformation": [
                 "Label",
                 "FillBar"
               ],
-              "choices": [],
               "hidden": true,
               "name": "BarBottomPadding"
             },
@@ -23389,7 +23084,9 @@
               "value": "true",
               "type": "Boolean",
               "label": "Show the label when the value is changed",
+              "description": "",
               "group": "Label",
+              "extraInformation": [],
               "name": "ShowLabelAtChanges"
             },
             {
@@ -23397,7 +23094,9 @@
               "type": "Number",
               "unit": "Pixel",
               "label": "Label margin",
+              "description": "",
               "group": "Label",
+              "extraInformation": [],
               "name": "LabelMargin"
             },
             {
@@ -23405,7 +23104,9 @@
               "type": "Number",
               "unit": "Dimensionless",
               "label": "Minimum value",
+              "description": "",
               "group": "Value",
+              "extraInformation": [],
               "name": "MinValue"
             },
             {
@@ -23413,7 +23114,9 @@
               "type": "Number",
               "unit": "Dimensionless",
               "label": "Maximum value",
+              "description": "",
               "group": "Value",
+              "extraInformation": [],
               "name": "MaxValue"
             },
             {
@@ -23421,7 +23124,9 @@
               "type": "Number",
               "unit": "Dimensionless",
               "label": "Step size",
+              "description": "",
               "group": "Value",
+              "extraInformation": [],
               "name": "StepSize"
             },
             {
@@ -23429,7 +23134,9 @@
               "type": "Number",
               "unit": "Dimensionless",
               "label": "Initial value",
+              "description": "",
               "group": "Value",
+              "extraInformation": [],
               "name": "InitialValue"
             },
             {
@@ -23437,6 +23144,8 @@
               "type": "Number",
               "label": "",
               "description": "It's used to detect a change at hot reload.",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "PreviousInitialValue"
             },
@@ -23445,10 +23154,10 @@
               "type": "String",
               "label": "",
               "description": "Only used by the scene editor.",
+              "group": "",
               "extraInformation": [
                 "Thumb"
               ],
-              "choices": [],
               "hidden": true,
               "name": "ThumbAnchorOrigin"
             },
@@ -23457,10 +23166,10 @@
               "type": "String",
               "label": "",
               "description": "Only used by the scene editor.",
+              "group": "",
               "extraInformation": [
                 "FillBar"
               ],
-              "choices": [],
               "hidden": true,
               "name": "ThumbAnchorTarget"
             },
@@ -23469,10 +23178,10 @@
               "type": "Boolean",
               "label": "",
               "description": "Only used by the scene editor.",
+              "group": "",
               "extraInformation": [
                 "Label"
               ],
-              "choices": [],
               "hidden": true,
               "name": "ShowLabel"
             },
@@ -23480,6 +23189,9 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "BarLeftPlusRightMargin"
             },
@@ -23487,6 +23199,9 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "BarTopPlusBottomMargin"
             },
@@ -23494,280 +23209,257 @@
               "value": "0",
               "type": "Number",
               "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "OldParentWidth"
             }
           ],
-          "variants": [
+          "objects": [
             {
-              "areaMaxX": 256,
-              "areaMaxY": 64,
-              "areaMaxZ": 64,
-              "areaMinX": 0,
-              "areaMinY": 0,
-              "areaMinZ": 0,
-              "name": "menkrep",
-              "objects": [
-                {
-                  "assetStoreId": "",
-                  "bold": false,
-                  "italic": false,
-                  "name": "Label",
-                  "smoothed": true,
-                  "type": "TextObject::Text",
-                  "underlined": false,
-                  "variables": [],
-                  "effects": [],
-                  "behaviors": [],
-                  "string": "It displays the value when it changes.",
-                  "font": "",
-                  "textAlignment": "",
-                  "characterSize": 20,
-                  "color": {
-                    "b": 0,
-                    "g": 0,
-                    "r": 0
-                  },
-                  "content": {
-                    "bold": false,
-                    "isOutlineEnabled": false,
-                    "isShadowEnabled": false,
-                    "italic": false,
-                    "outlineColor": "255;255;255",
-                    "outlineThickness": 2,
-                    "shadowAngle": 90,
-                    "shadowBlurRadius": 2,
-                    "shadowColor": "0;0;0",
-                    "shadowDistance": 4,
-                    "shadowOpacity": 127,
-                    "smoothed": true,
-                    "underlined": false,
-                    "text": "It displays the value when it changes.",
-                    "font": "",
-                    "textAlignment": "",
-                    "verticalTextAlignment": "top",
-                    "characterSize": 20,
-                    "lineHeight": 0,
-                    "color": "0;0;0"
-                  }
-                },
-                {
-                  "assetStoreId": "",
-                  "bottomMargin": 0,
-                  "height": 32,
-                  "leftMargin": 0,
-                  "name": "Thumb",
-                  "rightMargin": 0,
-                  "texture": "Thumb.png",
-                  "tiled": false,
-                  "topMargin": 0,
-                  "type": "PanelSpriteObject::PanelSprite",
-                  "width": 32,
-                  "variables": [],
-                  "effects": [],
-                  "behaviors": [
-                    {
-                      "name": "Anchor",
-                      "type": "AnchorBehavior::AnchorBehavior",
-                      "bottomEdgeAnchor": 4,
-                      "leftEdgeAnchor": 0,
-                      "relativeToOriginalWindowSize": true,
-                      "rightEdgeAnchor": 2,
-                      "topEdgeAnchor": 4,
-                      "useLegacyBottomAndRightAnchors": false
-                    },
-                    {
-                      "name": "Draggable",
-                      "type": "DraggableBehavior::Draggable",
-                      "checkCollisionMask": false
-                    }
-                  ]
-                },
-                {
-                  "assetStoreId": "",
-                  "bottomMargin": 0,
-                  "height": 32,
-                  "leftMargin": 0,
-                  "name": "FillBar",
-                  "rightMargin": 0,
-                  "texture": "bar.png",
-                  "tiled": true,
-                  "topMargin": 0,
-                  "type": "PanelSpriteObject::PanelSprite",
-                  "width": 32,
-                  "variables": [],
-                  "effects": [],
-                  "behaviors": [
-                    {
-                      "name": "Anchor",
-                      "type": "AnchorBehavior::AnchorBehavior",
-                      "rightEdgeAnchor": 2,
-                      "bottomEdgeAnchor": 2,
-                      "leftEdgeAnchor": 1,
-                      "topEdgeAnchor": 1,
-                      "relativeToOriginalWindowSize": true,
-                      "useLegacyBottomAndRightAnchors": false
-                    },
-                    {
-                      "name": "Slider",
-                      "type": "PanelSpriteSlider::Slider",
-                      "Value": 0,
-                      "MinValue": 0,
-                      "MaxValue": 1,
-                      "StepSize": 1
-                    }
-                  ]
-                },
-                {
-                  "assetStoreId": "",
-                  "bottomMargin": 0,
-                  "height": 32,
-                  "leftMargin": 0,
-                  "name": "Background",
-                  "rightMargin": 0,
-                  "texture": "FillBar.png",
-                  "tiled": false,
-                  "topMargin": 0,
-                  "type": "PanelSpriteObject::PanelSprite",
-                  "width": 32,
-                  "variables": [],
-                  "effects": [],
-                  "behaviors": [
-                    {
-                      "name": "Anchor",
-                      "type": "AnchorBehavior::AnchorBehavior",
-                      "bottomEdgeAnchor": 2,
-                      "leftEdgeAnchor": 1,
-                      "topEdgeAnchor": 1,
-                      "relativeToOriginalWindowSize": true,
-                      "rightEdgeAnchor": 2,
-                      "useLegacyBottomAndRightAnchors": false
-                    },
-                    {
-                      "name": "ButtonFSM",
-                      "type": "PanelSpriteSlider::ButtonFSM",
-                      "ShouldCheckHovering": true,
-                      "State": "Idle",
-                      "TouchId": 0,
-                      "TouchIsInside": false,
-                      "MouseIsInside": false,
-                      "Index": 0
-                    }
-                  ]
-                }
-              ],
-              "objectsFolderStructure": {
-                "folderName": "__ROOT",
-                "children": [
-                  {
-                    "objectName": "Label"
-                  },
-                  {
-                    "objectName": "Thumb"
-                  },
-                  {
-                    "objectName": "FillBar"
-                  },
-                  {
-                    "objectName": "Background"
-                  }
-                ]
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "Label",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "string": "It displays the value when it changes.",
+              "font": "",
+              "textAlignment": "",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
               },
-              "objectsGroups": [],
-              "layers": [
-                {
-                  "ambientLightColorB": 200,
-                  "ambientLightColorG": 200,
-                  "ambientLightColorR": 200,
-                  "camera3DFarPlaneDistance": 10000,
-                  "camera3DFieldOfView": 45,
-                  "camera3DNearPlaneDistance": 3,
-                  "cameraType": "",
-                  "followBaseLayerCamera": false,
-                  "isLightingLayer": false,
-                  "isLocked": false,
-                  "name": "",
-                  "renderingType": "",
-                  "visibility": true,
-                  "cameras": [
-                    {
-                      "defaultSize": true,
-                      "defaultViewport": true,
-                      "height": 0,
-                      "viewportBottom": 1,
-                      "viewportLeft": 0,
-                      "viewportRight": 1,
-                      "viewportTop": 0,
-                      "width": 0
-                    }
-                  ],
-                  "effects": []
-                }
-              ],
-              "instances": [
-                {
-                  "angle": 0,
-                  "customSize": true,
-                  "depth": 1,
-                  "height": 149,
-                  "layer": "",
-                  "name": "Background",
-                  "persistentUuid": "7b36a716-8a01-496a-ad7d-0de60daff8f9",
-                  "width": 698,
-                  "x": -120,
-                  "y": -211,
-                  "zOrder": 1,
-                  "numberProperties": [],
-                  "stringProperties": [],
-                  "initialVariables": []
-                },
-                {
-                  "angle": 0,
-                  "customSize": true,
-                  "depth": 1,
-                  "height": 110,
-                  "layer": "",
-                  "name": "FillBar",
-                  "persistentUuid": "e775f69e-7845-4103-8a05-5266aba60742",
-                  "width": 625,
-                  "x": -120,
-                  "y": -216,
-                  "zOrder": 2,
-                  "numberProperties": [],
-                  "stringProperties": [],
-                  "initialVariables": []
-                },
-                {
-                  "angle": 0,
-                  "customSize": true,
-                  "depth": 1,
-                  "height": 125,
-                  "layer": "",
-                  "name": "Thumb",
-                  "persistentUuid": "476a27da-e34f-451f-b660-04a6bbefddbe",
-                  "width": 114,
-                  "x": 459,
-                  "y": -218,
-                  "zOrder": 3,
-                  "numberProperties": [],
-                  "stringProperties": [],
-                  "initialVariables": []
-                }
-              ],
-              "editionSettings": {
-                "grid": false,
-                "gridType": "rectangular",
-                "gridWidth": 32,
-                "gridHeight": 32,
-                "gridOffsetX": 0,
-                "gridOffsetY": 0,
-                "gridColor": 10401023,
-                "gridAlpha": 0.8,
-                "snap": false,
-                "zoomFactor": 1.1168002946905693,
-                "windowMask": false,
-                "selectedLayer": ""
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "It displays the value when it changes.",
+                "font": "",
+                "textAlignment": "",
+                "verticalTextAlignment": "top",
+                "characterSize": 20,
+                "color": "0;0;0"
               }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "name": "Thumb",
+              "rightMargin": 0,
+              "texture": "",
+              "tiled": false,
+              "topMargin": 0,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 32,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "leftEdgeAnchor": 0,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 4,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Draggable",
+                  "type": "DraggableBehavior::Draggable",
+                  "checkCollisionMask": false
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "name": "FillBar",
+              "rightMargin": 0,
+              "texture": "",
+              "tiled": false,
+              "topMargin": 0,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 32,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "topEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Slider",
+                  "type": "PanelSpriteSlider::Slider",
+                  "Value": 0,
+                  "MinValue": 0,
+                  "MaxValue": 1,
+                  "StepSize": 1
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "name": "Background",
+              "rightMargin": 0,
+              "texture": "",
+              "tiled": false,
+              "topMargin": 0,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 32,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "topEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "ButtonFSM",
+                  "type": "PanelSpriteSlider::ButtonFSM",
+                  "ShouldCheckHovering": true,
+                  "State": "Idle",
+                  "TouchId": 0,
+                  "TouchIsInside": false,
+                  "MouseIsInside": false,
+                  "Index": 0
+                }
+              ]
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Thumb"
+              },
+              {
+                "objectName": "FillBar"
+              },
+              {
+                "objectName": "Background"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 0,
+              "height": 64,
+              "layer": "",
+              "name": "Background",
+              "persistentUuid": "7b36a716-8a01-496a-ad7d-0de60daff8f9",
+              "width": 256,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 44,
+              "layer": "",
+              "name": "FillBar",
+              "persistentUuid": "e775f69e-7845-4103-8a05-5266aba60742",
+              "width": 236,
+              "x": 10,
+              "y": 10,
+              "zOrder": 2,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 84,
+              "layer": "",
+              "name": "Thumb",
+              "persistentUuid": "476a27da-e34f-451f-b660-04a6bbefddbe",
+              "width": 32,
+              "x": 230,
+              "y": -10,
+              "zOrder": 3,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
             }
           ]
         }
@@ -23778,7 +23470,6 @@
       "category": "General",
       "extensionNamespace": "",
       "fullName": "Array tools",
-      "gdevelopVersion": ">=5.5.222",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjExIiB5MT0iNyIgeDI9IjI5IiB5Mj0iNyIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjExIiB5MT0iMTYiIHgyPSIyMiIgeTI9IjE2Ii8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMTEiIHkxPSIyNSIgeDI9IjI5IiB5Mj0iMjUiLz4NCjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjUiIGN5PSI3IiByPSIyIi8+DQo8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSI1IiBjeT0iMTYiIHI9IjIiLz4NCjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjUiIGN5PSIyNSIgcj0iMiIvPg0KPC9zdmc+DQo=",
       "name": "ArrayTools",
@@ -23821,12 +23512,6 @@
       ],
       "authorIds": [
         "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1"
-      ],
-      "changelog": [
-        {
-          "version": "3.0.0",
-          "breaking": "- Variables have to be declared"
-        }
       ],
       "dependencies": [],
       "globalVariables": [],
@@ -28235,7 +27920,6 @@
       "category": "User interface",
       "extensionNamespace": "",
       "fullName": "Cancellable draggable object",
-      "gdevelopVersion": ">=5.5.222",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXN0ZXAtYmFja3dhcmQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTksNVYxOUgxNlY1TTE0LDVWMTlMMywxMiIgLz48L3N2Zz4=",
       "name": "CancellableDraggable",
@@ -28588,26 +28272,31 @@
               "value": "",
               "type": "Behavior",
               "label": "Draggable behavior",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "DraggableBehavior::Draggable"
               ],
-              "choices": [],
               "name": "DraggableBehavior"
             },
             {
               "value": "",
               "type": "Behavior",
               "label": "Tween behavior",
+              "description": "",
+              "group": "",
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
-              "choices": [],
               "name": "TweenBehavior"
             },
             {
               "value": "",
               "type": "Number",
               "label": "Original X",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "OriginalX"
             },
@@ -28615,6 +28304,9 @@
               "value": "",
               "type": "Number",
               "label": "Original Y",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "hidden": true,
               "name": "OriginalY"
             }
@@ -28629,7 +28321,6 @@
       "category": "Game mechanic",
       "extensionNamespace": "",
       "fullName": "Object Stack",
-      "gdevelopVersion": ">=5.5.222",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4LDI5SDhjLTIuMiwwLTQtMS44LTQtNFY3YzAtMi4yLDEuOC00LDQtNGgxMGMyLjIsMCw0LDEuOCw0LDR2MThDMjIsMjcuMiwyMC4yLDI5LDE4LDI5eiIvPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLDYuNGw1LDNjMS45LDEuMSwyLjUsMy42LDEuMyw1LjVMMjIsMjUuNSIvPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI4LDE2bDAuNSwwLjdjMS4zLDEuOCwwLjgsNC4zLTEsNS42bC01LjcsNCIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjgiIHkxPSI3IiB4Mj0iOCIgeTI9IjkiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIxOCIgeTE9IjIzIiB4Mj0iMTgiIHkyPSIyNSIvPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjQsMTYuNmMwLjUsMC41LDEuMywwLjUsMS44LDBsMC44LTAuOGwwLjgsMC44YzAuNSwwLjUsMS4zLDAuNSwxLjgsMGMwLjUtMC41LDAuNS0xLjQsMC0xLjlsLTAuOC0wLjhMMTMsMTINCglsLTEuOCwxLjlsLTAuOCwwLjhDOS45LDE1LjIsOS45LDE2LjEsMTAuNCwxNi42eiIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjEyIiB5MT0iMjAiIHgyPSIxNCIgeTI9IjIwIi8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMTMiIHkxPSIxNyIgeDI9IjEzIiB5Mj0iMTkiLz4NCjwvc3ZnPg0K",
       "name": "ObjectStack",
@@ -29791,7 +29482,6 @@
       "category": "Movement",
       "extensionNamespace": "",
       "fullName": "Stick objects to others",
-      "gdevelopVersion": ">=5.5.222",
       "helpPath": "",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXN0aWNrZXItb3V0bGluZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik01LjUgMkMzLjYgMiAyIDMuNiAyIDUuNVYxOC41QzIgMjAuNCAzLjYgMjIgNS41IDIySDE2TDIyIDE2VjUuNUMyMiAzLjYgMjAuNCAyIDE4LjUgMkg1LjVNNS44IDRIMTguM0MxOS4zIDQgMjAuMSA0LjggMjAuMSA1LjhWMTVIMTguNkMxNi43IDE1IDE1LjEgMTYuNiAxNS4xIDE4LjVWMjBINS44QzQuOCAyMCA0IDE5LjIgNCAxOC4yVjUuOEM0IDQuOCA0LjggNCA1LjggNCIgLz48L3N2Zz4=",
       "name": "Sticker",
@@ -30420,12 +30110,18 @@
               "value": "",
               "type": "Boolean",
               "label": "Only follow the position",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "OnlyFollowPosition"
             },
             {
               "value": "",
               "type": "Boolean",
               "label": "Destroy when the object it's stuck on is destroyed",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
               "name": "IsDestroyedWithParent"
             }
           ],
