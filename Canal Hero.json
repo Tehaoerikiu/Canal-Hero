@@ -1633,6 +1633,86 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "Masker.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Masker.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Daun.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Daun.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Minuman Kaleng.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minuman Kaleng.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Keranjang Sampah.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Keranjang Sampah.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Terkena Damage.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Terkena Damage.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Minyak.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minyak.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pecahan Kaca.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pecahan Kaca.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Rumput Apung.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Rumput Apung.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -12765,7 +12845,6 @@
           "colorG": 2,
           "colorR": 208,
           "creationTime": 0,
-          "folded": true,
           "name": "Technical Codes",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14200,7 +14279,6 @@
               "colorG": 0,
               "colorR": 0,
               "creationTime": 0,
-              "folded": true,
               "name": "Trash Logics",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -16157,7 +16235,6 @@
           "colorG": 2,
           "colorR": 208,
           "creationTime": 0,
-          "folded": true,
           "name": "Lose",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16748,7 +16825,7 @@
                           },
                           "parameters": [
                             "\"LevelSaved\"",
-                            "Level",
+                            "\"Level\"",
                             "ToJSON(Core)"
                           ]
                         }
@@ -19813,6 +19890,20 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Save & Load"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "sound"
+        },
+        {
           "colorB": 162,
           "colorG": 155,
           "colorR": 145,
@@ -20579,11 +20670,373 @@
               "parameters": []
             },
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Sound",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "colorB": 22,
+                  "colorG": 19,
+                  "colorR": 15,
+                  "creationTime": 0,
+                  "name": "When Collision w/ Garbage",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Layer"
+                          },
+                          "parameters": [
+                            "Garbage",
+                            "\"Eco_Deck\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Boat",
+                            "Garbage",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VariableChildCount"
+                          },
+                          "parameters": [
+                            "Trash",
+                            "<=",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"Mask\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Masker.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"Leaf\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Daun.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"Drink\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Minuman Kaleng.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"wastebasket\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Keranjang Sampah.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 27,
+                  "colorG": 2,
+                  "colorR": 208,
+                  "creationTime": 0,
+                  "name": "Obstacle Sound & Collision on them",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Collision w Obstacle",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Boat",
+                                "BoatDestroyed",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Terkena Damage.wav",
+                                "4",
+                                "no",
+                                "100",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "DebuggerTools::ConsoleLog"
+                              },
+                              "parameters": [
+                                "\"PLAY MUSIC\"",
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Trunk",
+                                "Boat",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Batang Kayu.wav",
+                                "4",
+                                "no",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Animasi Slide Air.wav",
+                        "-2",
+                        "",
+                        "100",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "gamestart",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Backsound 2.wav",
+                        "1",
+                        "yes",
+                        "100",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
               "colorB": 0,
               "colorG": 0,
               "colorR": 0,
               "creationTime": 0,
-              "folded": true,
               "name": "Collision with border & between object",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -20961,7 +21414,6 @@
                   "colorG": 233,
                   "colorR": 184,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Generate Trash on Invent",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -21281,7 +21733,6 @@
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -21297,7 +21748,6 @@
                           "actions": [],
                           "events": [
                             {
-                              "folded": true,
                               "type": "BuiltinCommonInstructions::ForEach",
                               "object": "Garbage",
                               "conditions": [],
@@ -21393,6 +21843,34 @@
                                         ""
                                       ]
                                     }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PlaySoundCanal"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Jawaban Salah.wav",
+                                            "5",
+                                            "no",
+                                            "100",
+                                            "1"
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
@@ -21443,6 +21921,19 @@
                                         "Sticker",
                                         "TrashCan",
                                         ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PlaySoundCanal"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Jawaban Benar.wav",
+                                        "5",
+                                        "no",
+                                        "100",
+                                        "1"
                                       ]
                                     }
                                   ]
@@ -21603,7 +22094,6 @@
               "colorG": 0,
               "colorR": 0,
               "creationTime": 0,
-              "folded": true,
               "name": "Heal",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -21654,6 +22144,19 @@
                         "Animation",
                         "=",
                         "ToString(ToNumber(Health.Animation::Name()) + 1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Healing.wav",
+                        "6",
+                        "",
+                        "100",
+                        "1"
                       ]
                     }
                   ]
@@ -22227,6 +22730,28 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mission Complete.wav",
+                    "8",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -22368,16 +22893,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "SceneTarget",
-                    "=",
-                    "\"LevelMap\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -22395,6 +22910,53 @@
                     "\"Level\"",
                     "Core.Level"
                   ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Next_btn",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Next_btn",
+                    "Tween",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Win",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "SceneTarget",
+                    "=",
+                    "\"LevelMap\""
+                  ]
                 },
                 {
                   "type": {
@@ -22403,6 +22965,37 @@
                   "parameters": [
                     "Water_transition",
                     "\"Trans\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
                   ]
                 },
                 {
@@ -22477,6 +23070,37 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -22540,6 +23164,28 @@
                   "parameters": [
                     "",
                     "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mission Failed.wav",
+                    "8",
+                    "",
+                    "100",
+                    "1"
                   ]
                 },
                 {
@@ -22689,6 +23335,37 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -22755,6 +23432,37 @@
                   "parameters": [
                     "Water_transition",
                     "\"Trans\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
                   ]
                 },
                 {
@@ -22826,6 +23534,19 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Setting.wav",
+                        "7",
+                        "100",
+                        "100",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetBooleanObjectVariable"
@@ -22984,6 +23705,16 @@
                             "Garbage",
                             "Draggable",
                             "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"LevelSaved\"",
+                            "\"Level\"",
+                            "ToJSON(Core)"
                           ]
                         }
                       ]
@@ -23260,7 +23991,7 @@
           "isLocked": false,
           "name": "Eco_Dock",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -26184,6 +26915,20 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Save & Load"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "sound"
+        },
+        {
           "colorB": 162,
           "colorG": 155,
           "colorR": 145,
@@ -26247,7 +26992,7 @@
           "colorG": 2,
           "colorR": 208,
           "creationTime": 0,
-          "name": "Technical Codes",
+          "name": "Technical Codes ",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -26422,6 +27167,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Random Spawn Generate",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -26942,6 +27688,331 @@
                             ""
                           ]
                         }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Sound",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "colorB": 22,
+                  "colorG": 19,
+                  "colorR": 15,
+                  "creationTime": 0,
+                  "name": "When Collision w/ Garbage",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Layer"
+                          },
+                          "parameters": [
+                            "Garbage",
+                            "\"Eco_Deck\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Boat",
+                            "Garbage",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VariableChildCount"
+                          },
+                          "parameters": [
+                            "Trash",
+                            "<=",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"Oil\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Minyak.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"BigBat\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Battery.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"BrokenGlass\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Pecahan Kaca.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "Animation",
+                                "=",
+                                "\"FloatGrass\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Rumput Apung.wav",
+                                "-3",
+                                "",
+                                "100",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 27,
+                  "colorG": 2,
+                  "colorR": 208,
+                  "creationTime": 0,
+                  "name": "Obstacle Sound & Collision on them",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Collision w Obstacle",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Boat",
+                                "Stone",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "Terkena Damage.wav",
+                                "4",
+                                "no",
+                                "100",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "DebuggerTools::ConsoleLog"
+                              },
+                              "parameters": [
+                                "\"PLAY MUSIC\"",
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Animasi Slide Air.wav",
+                        "-2",
+                        "",
+                        "100",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "gamestart",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Backsound 2.wav",
+                        "1",
+                        "yes",
+                        "100",
+                        "1"
                       ]
                     }
                   ]
@@ -27650,7 +28721,6 @@
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -27666,7 +28736,6 @@
                           "actions": [],
                           "events": [
                             {
-                              "folded": true,
                               "type": "BuiltinCommonInstructions::ForEach",
                               "object": "Garbage",
                               "conditions": [],
@@ -27762,6 +28831,34 @@
                                         ""
                                       ]
                                     }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PlaySoundCanal"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Jawaban Salah.wav",
+                                            "5",
+                                            "no",
+                                            "100",
+                                            "1"
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
@@ -27812,6 +28909,19 @@
                                         "Sticker",
                                         "TrashCan",
                                         ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PlaySoundCanal"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Jawaban Benar.wav",
+                                        "5",
+                                        "no",
+                                        "100",
+                                        "1"
                                       ]
                                     }
                                   ]
@@ -28023,6 +29133,19 @@
                         "Animation",
                         "=",
                         "ToString(ToNumber(Health.Animation::Name()) + 1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Healing.wav",
+                        "6",
+                        "",
+                        "100",
+                        "1"
                       ]
                     }
                   ]
@@ -28596,6 +29719,28 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mission Complete.wav",
+                    "8",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -28746,6 +29891,37 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -28816,6 +29992,37 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -28879,6 +30086,28 @@
                   "parameters": [
                     "",
                     "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mission Failed.wav",
+                    "8",
+                    "",
+                    "100",
+                    "1"
                   ]
                 },
                 {
@@ -29028,6 +30257,37 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
@@ -29094,6 +30354,37 @@
                   "parameters": [
                     "Water_transition",
                     "\"Trans\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "-4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Animasi Slide Air.wav",
+                    "-2",
+                    "",
+                    "100",
+                    "1"
                   ]
                 },
                 {
@@ -29165,6 +30456,19 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Setting.wav",
+                        "7",
+                        "100",
+                        "100",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetBooleanObjectVariable"
@@ -29323,6 +30627,16 @@
                             "Garbage",
                             "Draggable",
                             "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"LevelSaved\"",
+                            "\"Level\"",
+                            "ToJSON(Core)"
                           ]
                         }
                       ]
