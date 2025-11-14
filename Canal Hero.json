@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "D:\\Laragon\\GDevelop\\Canal-Hero\\exports\\desktop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -4846,7 +4846,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.26364576737708023,
+        "zoomFactor": 0.15508574551592968,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -4989,6 +4989,38 @@
           "x": 640,
           "y": 967,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Music",
+          "persistentUuid": "c149c3a0-377d-4739-a799-b5a80e48cf92",
+          "width": 0,
+          "x": 1630,
+          "y": 1303,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Volume",
+          "persistentUuid": "3f94a32b-e469-4490-ba96-0eb7997214b8",
+          "width": 0,
+          "x": 1630,
+          "y": 1148,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5638,12 +5670,32 @@
                     "",
                     "\"Loading Scene\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PreloadMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "Backsound 1.wav"
+                  ]
                 }
               ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "MusicPlaying"
+                      },
+                      "parameters": [
+                        "",
+                        "0"
+                      ]
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
@@ -8997,6 +9049,17 @@
                 "",
                 "TempLevel"
               ]
+            },
+            {
+              "type": {
+                "value": "EnableLayerEffect"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"blur\"",
+                "no"
+              ]
             }
           ],
           "events": [
@@ -9037,7 +9100,6 @@
           "colorG": 2,
           "colorR": 208,
           "creationTime": 0,
-          "folded": true,
           "name": "Tips",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9179,6 +9241,17 @@
                             "Tips",
                             "\"PlayTips\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "EnableLayerEffect"
+                          },
+                          "parameters": [
+                            "",
+                            "",
+                            "\"blur\"",
+                            "yes"
+                          ]
                         }
                       ]
                     },
@@ -9273,6 +9346,17 @@
                           "parameters": [
                             "Tips",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EnableLayerEffect"
+                          },
+                          "parameters": [
+                            "",
+                            "",
+                            "\"blur\"",
+                            "no"
                           ]
                         }
                       ]
@@ -9420,6 +9504,17 @@
                             "Settings",
                             "\"Settings\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "EnableLayerEffect"
+                          },
+                          "parameters": [
+                            "",
+                            "",
+                            "\"blur\"",
+                            "yes"
+                          ]
                         }
                       ]
                     },
@@ -9504,6 +9599,17 @@
                           "parameters": [
                             "Settings",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EnableLayerEffect"
+                          },
+                          "parameters": [
+                            "",
+                            "",
+                            "\"blur\"",
+                            "no"
                           ]
                         },
                         {
@@ -10008,6 +10114,19 @@
               "booleanParameters": {
                 "isCastingShadow": true
               }
+            },
+            {
+              "effectType": "KawaseBlur",
+              "name": "blur",
+              "doubleParameters": {
+                "blur": 5,
+                "padding": 0,
+                "pixelizeX": 1,
+                "pixelizeY": 1,
+                "quality": 3
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
             }
           ]
         },
@@ -31243,29 +31362,81 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "ReadStringFromStorage"
-              },
-              "parameters": [
-                "\"LevelSaved\"",
-                "\"Level\"",
-                "",
-                "Temp"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"LevelSaved\"",
+                    "\"Level\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Core.sfx",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Core.bgm",
+                    "=",
+                    "100"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "JSONToVariableStructure2"
-              },
-              "parameters": [
-                "Temp",
-                "Core"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"LevelSaved\"",
+                    "\"Level\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ReadStringFromStorage"
+                  },
+                  "parameters": [
+                    "\"LevelSaved\"",
+                    "\"Level\"",
+                    "",
+                    "Temp"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure2"
+                  },
+                  "parameters": [
+                    "Temp",
+                    "Core"
+                  ]
+                }
               ]
-            }
-          ],
-          "events": [
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -31400,6 +31571,17 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "0",
+                "=",
+                "Music.Value()"
+              ]
+            },
             {
               "type": {
                 "value": "ModVolumeMusicCanal"
