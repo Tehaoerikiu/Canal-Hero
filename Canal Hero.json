@@ -92,7 +92,7 @@
   "resources": {
     "resources": [
       {
-        "file": "../../../Downloads/Canal Hero/Title.png",
+        "file": "Title.png",
         "kind": "image",
         "metadata": "",
         "name": "..\\..\\..\\Downloads\\Canal Hero\\Title.png",
