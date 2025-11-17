@@ -18,13 +18,13 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "name": "Canal Hero",
     "description": "",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "D:\\Laragon\\GDevelop\\Canal-Hero\\exports\\desktop",
+    "latestCompilationDirectory": "D:\\Laragon\\GDevelop\\Canal-Hero\\exports\\mobile",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -13637,6 +13637,7 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -13679,6 +13680,15 @@
                       "parameters": [
                         "",
                         "\"UI\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Spawner\""
                       ]
                     }
                   ],
@@ -14276,6 +14286,17 @@
                       "conditions": [
                         {
                           "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Garbage",
+                            ">=",
+                            "10"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "AjoutObjConcern"
                           },
                           "parameters": [
@@ -14421,11 +14442,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": []
                     }
                   ]
                 },
@@ -14563,7 +14579,6 @@
               "colorG": 127,
               "colorR": 107,
               "creationTime": 0,
-              "folded": true,
               "name": "Sound",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -14993,7 +15008,6 @@
               "colorG": 0,
               "colorR": 0,
               "creationTime": 0,
-              "folded": true,
               "name": "Collision with border & between object",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15511,7 +15525,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -15600,7 +15613,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -15619,6 +15631,15 @@
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
+                            {
+                              "type": {
+                                "value": "Layer"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "\"Eco_Deck\""
+                              ]
+                            },
                             {
                               "type": {
                                 "value": "CollisionNP"
@@ -16548,7 +16569,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -21199,7 +21219,6 @@
               "colorG": 108,
               "colorR": 100,
               "creationTime": 0,
-              "folded": true,
               "name": "Transition",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -22544,7 +22563,6 @@
               "colorG": 0,
               "colorR": 0,
               "creationTime": 0,
-              "folded": true,
               "name": "Trash Logics",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -22748,7 +22766,6 @@
                   "colorG": 233,
                   "colorR": 184,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Generate Trash on Invent",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -22994,6 +23011,15 @@
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
+                            {
+                              "type": {
+                                "value": "Layer"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "\"Eco_Deck\""
+                              ]
+                            },
                             {
                               "type": {
                                 "value": "CollisionNP"
@@ -30333,6 +30359,15 @@
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
+                            {
+                              "type": {
+                                "value": "Layer"
+                              },
+                              "parameters": [
+                                "Garbage",
+                                "\"Eco_Deck\""
+                              ]
+                            },
                             {
                               "type": {
                                 "value": "CollisionNP"
